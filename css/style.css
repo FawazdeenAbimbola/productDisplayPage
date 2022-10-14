@@ -22,7 +22,7 @@
     cursor:pointer;
     margin:30px 0;
 }
-.fa-bars{
+#menu{
     display: none;
     font-size: 21px;
     cursor: pointer;
@@ -148,13 +148,23 @@ button:hover{
 
 }
 @media (max-width:700px){
+    .container{
+        padding-left: 6%;
+    }
     nav ul{
         width:100%;
         background:linear-gradient(to right, #fb5283, #ff3527 );
         position: absolute;
-        top:0;
+        display: none;
+        top:100px;
         right:0%;
+        height:300px;
+        
         z-index: 2;
+        transition: 0.3s;
+    }
+    .show{
+        display: block;
     }
     nav ul li{
         display: block;
@@ -164,8 +174,31 @@ button:hover{
     nav ul li a{
         color:white;
     }
-.fa-bars{
+#menu{
    display: block; 
+}
+.row{
+    flex-direction: column-reverse;
+    margin: 50px 0;
+}
+.col-2{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+}
+.col-2 .controller{
+   width:77%;    
+}
+.color-box{
+    transform: translateX(75px);
+}
+.col-1{
+    flex-basis: 100%;
+}
+.col-1 h2{
+font-size: 35px;
+}
+.col-1 h3{
+    font-size:  15px ;
 }
 
 }
