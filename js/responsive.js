@@ -1,11 +1,14 @@
-const menuList = document.querySelector('#menulist');
-menuList.style.maxHeight = "0px";
 
-function togglemenu() {
-    if(menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "130px";
-    }
-    else{
-        menuList.style.maxHeight = "0px";
-    }
+// menuList.style.display == "none"
+// function togglemenu() {
+//     if(menuList.style.display == "none") {
+//        menuList.style.display = "block";
+//     }
+//     else{
+//         menuList.style.display = "none";
+//     }
+// }
+function showNav() {
+    var menuList = document.getElementById("menulist");
+    menuList.classList.toggle("show");
 }
